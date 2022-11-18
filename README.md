@@ -1,5 +1,5 @@
 # PRINTF function project in C
-## Olaoluwa Idowu && Rosemary Nwachukwu.
+## by Olaoluwa Idowu && Rosemary Nwachukwu.
  
 ### 0. A function that produces output according to a format.
 
