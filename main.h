@@ -19,5 +19,7 @@ int char_handler(va_list val);
 int string_handler(va_list val);
 int percent_handler(void);
 int _strlen(char *s);
+int dec_handler(va_list args);
+int int_handler(va_list args);
 
 #endif

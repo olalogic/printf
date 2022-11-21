@@ -9,7 +9,7 @@
 int _printf(const char * const format, ...)
 {
 	convert_match m[] = {
-		{"%s", string_handler}, {"%c", char_handler}, {"%%", percent_handler}
+		{"%s", string_handler}, {"%c", char_handler}, {"%%", percent_handler}, {"%d", dec_handler}, {"%i", int_handler}
 	};
 
 	va_list args;
