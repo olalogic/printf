@@ -52,7 +52,7 @@ int char_handler(va_list val)
 
 int percent_handler(void)
 {
-        _putchar(37);
-        return (1);
+	_putchar(37);
+	return (1);
 }
 
