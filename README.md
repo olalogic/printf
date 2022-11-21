@@ -3,6 +3,12 @@
  
 ### 0. A function that produces output according to a format.
 
+> c
+
+> s
+
+> %
+
 > Returns: the number of characters printed (excluding the null byte used to end output to strings)
 
 
