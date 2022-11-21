@@ -26,5 +26,6 @@ int unsigned_handler(va_list args);
 int octal_handler(va_list args);
 int hex_lower_handler(va_list args);
 int hex_upper_handler(va_list args);
+int ex_string_handler(va_list val);
 
 #endif

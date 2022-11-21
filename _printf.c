@@ -13,7 +13,8 @@ int _printf(const char * const format, ...)
 	       	{"%%", percent_handler}, {"%d", dec_handler},
 	       	{"%i", int_handler}, {"%b", binary_handler},
 	       	{"%u", unsigned_handler}, {"%o", octal_handler},
-		{"%x", hex_lower_handler}, {"%X", hex_upper_handler}
+		{"%x", hex_lower_handler}, {"%X", hex_upper_handler},
+		{"%S", ex_string_handler}
 	};
 
 	va_list args;
