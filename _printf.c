@@ -10,9 +10,9 @@ int _printf(const char * const format, ...)
 {
 	convert_match m[] = {
 		{"%s", string_handler}, {"%c", char_handler},
-	       	{"%%", percent_handler}, {"%d", dec_handler},
-	       	{"%i", int_handler}, {"%b", binary_handler},
-	       	{"%u", unsigned_handler}, {"%o", octal_handler},
+		{"%%", percent_handler}, {"%d", dec_handler},
+		{"%i", int_handler}, {"%b", binary_handler},
+		{"%u", unsigned_handler}, {"%o", octal_handler},
 		{"%x", hex_lower_handler}, {"%X", hex_upper_handler},
 		{"%S", ex_string_handler}, {"%p", pointer_handler}
 	};
