@@ -76,7 +76,7 @@ int string_handler(va_list types, char buffer[],
 }
 
 /**
- * percent_handler - Prints a percent sign
+ * percent_handler - Prints percent sign
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -141,7 +141,7 @@ int int_handler(va_list types, char buffer[],
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 
-/************************* PRINT BINARY *************************/
+
 /**
  * binary_handler - Prints an unsigned number
  * @types: Lista of arguments
