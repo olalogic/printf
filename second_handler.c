@@ -35,7 +35,6 @@ int flag_handler(const char *format, int *i)
 }
 
 
-#include "main.h"
 
 /**
  * precision_handler - Calculates the precision for printing
@@ -77,8 +76,6 @@ int precision_handler(const char *format, int *i, va_list list)
 	return (precision);
 }
 
-#include "main.h"
-
 /**
  * width_handler - Calculates the width for printing
  * @format: Formatted string in which to print the arguments
@@ -115,7 +112,6 @@ int width_handler(const char *format, int *i, va_list list)
 }
 
 
-#include "holberton.h"
 
 /**
  * size_handler - Calculates the size to cast the argument

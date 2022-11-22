@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
 
@@ -33,9 +33,9 @@ int _printf(const char *format, ...)
 		{
 			print_buffer(buffer, &buff_ind);
 			flags = flag_handler(format, &i);
-			width = get_width(format, &i, list);
-			precision = get_precision(format, &i, list);
-			size = get_size(format, &i);
+			width = width_handler(format, &i, list);
+			precision = precision_handler(format, &i, list);
+			size = size_handler(format, &i);
 			++i;
 			printed = printer(format, &i, list, buffer,
 				flags, width, precision, size);

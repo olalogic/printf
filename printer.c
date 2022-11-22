@@ -1,6 +1,6 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * handle_print - Prints an argument based on its type
+ * printer - Prints an argument based on its type
  * @fmt: Formatted string in which to print the arguments
  * @list: List of arguments to be printed
  * @ind: ind.
@@ -11,18 +11,18 @@
  * @size: Size specifier
  * Return: 1 or 2;
  */
-int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
+int printer(const char *fmt, int *ind, va_list list, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i, unknow_len = 0, printed_chars = -1;
 	fmt_t fmt_types[] = {
-		{"%s", string_handler}, {"%c", char_handler},
-		{"%%", percent_handler}, {"%i", int_handler},
-		{"%d", dec_handler}, {"%r", rev_handler},
-		{"%R", rot13_handler}, {"%b", binary_handler},
-		{"%u", unsigned_handler}, {"%o", octal_handler},
-		{"%x", hex_lower_handler}, {"%X", hex_upper_handler},
-		{"%S", ex_string_handler}, {"%p", pointer_handler},
+		{'s', string_handler}, {'c', char_handler},
+		{'%', percent_handler}, {'i', int_handler},
+		{'d', int_handler}, {'r', rev_handler},
+		{'R', rot13_handler}, {'b', binary_handler},
+		{'u', unsigned_handler}, {'o', octal_handler},
+		{'x', hex_lower_handler}, {'X', hex_upper_handler},
+		{'S', ex_string_handler}, {'p', pointer_handler},
 		{'\0', NULL}
 	};
 
