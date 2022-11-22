@@ -28,5 +28,7 @@ int hex_lower_handler(va_list args);
 int hex_upper_handler(va_list args);
 int ex_string_handler(va_list val);
 int hex_upper_embeded(unsigned int num);
+int hex_lower_embeded(unsigned long int num);
+int pointer_handler(va_list val);
 
 #endif
