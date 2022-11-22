@@ -6,7 +6,7 @@
  * Return: string
  */
 
-int printf_srev(va_list args)
+int rev_handler(va_list args)
 {
 
 	char *s = va_arg(args, char*);
