@@ -30,5 +30,7 @@ int ex_string_handler(va_list val);
 int hex_upper_embeded(unsigned int num);
 int hex_lower_embeded(unsigned long int num);
 int pointer_handler(va_list val);
+int rot13_handler(va_list args);
+int rev_handler(va_list args);
 
 #endif
