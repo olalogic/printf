@@ -58,7 +58,7 @@ int precision_handler(const char *format, int *i, va_list list)
 	{
 		if (is_digit(format[curr_i]))
 		{
-			precision = 10;
+			precision *= 10;
 			precision += format[curr_i] - '0';
 		}
 		else if (format[curr_i] == '*')
